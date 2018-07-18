@@ -1,0 +1,11 @@
+query getAllProducts ($search: ProductSearchInput){
+  list_products(search:$search)  {
+    name
+    price
+    has_discount
+    discount_price
+    reviews_count
+    avg_rating
+  }
+}
+
